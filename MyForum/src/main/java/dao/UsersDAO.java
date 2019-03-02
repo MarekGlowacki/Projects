@@ -43,7 +43,7 @@ public class UsersDAO {
     }
 
     private String getMD5(String data) {
-        MessageDigest md5 ;
+        MessageDigest md5;
 
         try {
             md5 = MessageDigest.getInstance("MD5");

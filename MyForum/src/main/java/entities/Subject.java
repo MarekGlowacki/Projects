@@ -12,8 +12,9 @@ public class Subject {
     @GeneratedValue
     private int id;
 
-    @Lob()
     private String title;
+
+    @Lob()
     private String content;
     private Timestamp date;
 
@@ -24,6 +25,14 @@ public class Subject {
     @OneToMany(mappedBy = "subject", fetch = FetchType.EAGER)
     @OrderBy("date ASC")
     private Set<Post> posts;
+
+    public Set<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(Set<Post> posts) {
+        this.posts = posts;
+    }
 
     public int getId() {
         return id;
@@ -61,7 +70,7 @@ public class Subject {
         return user;
     }
 
-    public void setUser(User userId) {
+    public void setUser(User user) {
         this.user = user;
     }
 }

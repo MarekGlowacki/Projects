@@ -10,6 +10,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset-8">
     <title>Forum - add new subject</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
         <p>Type subject title:</p>
         <input type="text" name="title" maxlength="255" />
         <p>Type subject content:</p>
-        <textarea name="content" rows="40" cols="9"></textarea><br />
+        <textarea name="content" rows="9" cols="40"></textarea><br />
         <input type="submit" value="Add" />
     </form>
 </body>

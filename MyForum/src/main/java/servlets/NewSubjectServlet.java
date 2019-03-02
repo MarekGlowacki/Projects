@@ -23,6 +23,7 @@ public class NewSubjectServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String title = request.getParameter("title");
         String content = request.getParameter("content");
         if (!"".equals(title) && !"".equals(content)) {

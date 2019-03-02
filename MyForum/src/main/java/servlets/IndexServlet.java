@@ -17,6 +17,7 @@ public class IndexServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         SubjectsDAO dao = (SubjectsDAO)request.getAttribute("subjectsDAO");
         List<Subject> subjects = dao.getSubjects();
         request.setAttribute("subjects", subjects);

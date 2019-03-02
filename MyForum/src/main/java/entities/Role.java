@@ -7,6 +7,8 @@ import java.io.Serializable;
 @Table(name = "role")
 public class Role implements Serializable {
 
+    private static final long serialVersionUID = -3299291830280417103L;
+
     @Id
     @GeneratedValue
     private int id;

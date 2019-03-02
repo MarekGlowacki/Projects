@@ -10,7 +10,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>My Forum</title>
+    <title>Forum</title>
 </head>
 <body>
     <h1>Login</h1>

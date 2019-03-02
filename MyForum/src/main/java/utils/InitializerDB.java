@@ -10,7 +10,7 @@ import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener()
+@WebListener
 public class InitializerDB implements ServletRequestListener {
 
     public void requestDestroyed(ServletRequestEvent arg0) {

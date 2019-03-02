@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(value = "/register")
-public class RegisterServlet extends HttpServlet {
+public class RegistrationServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
@@ -27,11 +27,11 @@ public class RegisterServlet extends HttpServlet {
         String password2 = request.getParameter("password2");
 
         if (login != null && password != null && password2 != null && password.equals(password2) && !"".equals(password)) {
-            UsersDAO dao = (UsersDAO)request.getAttribute("UsersDAO");
+            UsersDAO dao = (UsersDAO)request.getAttribute("usersDAO");
 
             try {
                 dao.getAfterLogin(login);
-                request.setAttribute("error", "There is no login like that!");
+                request.setAttribute("error", "That's login already exist!");
                 doGet(request, response);
                 return;
             } catch (NoResultException nre) {

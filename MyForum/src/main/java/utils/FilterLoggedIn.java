@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(filterName = "/*")
+@WebFilter("/*")
 public class FilterLoggedIn implements Filter {
 
 
@@ -19,8 +19,10 @@ public class FilterLoggedIn implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
         HttpServletRequest req = (HttpServletRequest)request;
         HttpServletResponse res = (HttpServletResponse)response;
+
         req.setCharacterEncoding("UTF-8");
         String login = req.getRemoteUser();
+
         if (login != null) {
             User u = (User)req.getSession().getAttribute("user");
             if (u == null) {

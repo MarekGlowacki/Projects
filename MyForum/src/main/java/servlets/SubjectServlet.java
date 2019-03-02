@@ -21,6 +21,7 @@ public class SubjectServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html; charset = utf-8");
         String stringId = request.getParameter("id");
         if (stringId != null) {
             int id = Integer.parseInt(stringId);
@@ -34,6 +35,7 @@ public class SubjectServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         String content = request.getParameter("content");
         String stringId = request.getParameter("id");
         if (content != null && stringId != null) {

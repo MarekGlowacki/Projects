@@ -7,6 +7,10 @@
         <class>main.java.entities.User</class>
         <class>main.java.entities.Post</class>
         <class>main.java.entities.Role</class>
+        <class>models.PostEntity</class>
+        <class>models.RoleEntity</class>
+        <class>models.SubjectEntity</class>
+        <class>models.UserEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/forum?characterEncoding=utf8"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
