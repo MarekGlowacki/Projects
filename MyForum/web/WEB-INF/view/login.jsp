@@ -14,12 +14,19 @@
 </head>
 <body>
     <h1>Login</h1>
-    <form method="post" action="j_security_check">
-        <p>Login:</p>
-        <input type="text" name="j_username" />
-        <p>Password:</p>
-        <input type="password" name="j_password" /><br />
-        <input type="submit" value="Login" />
+    <form method = "POST" action ="j_security_check">
+        <table>
+            <tr>
+                <td>Login</td>
+                <td><input type = "text" name="j_username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type = "password" name="j_password"></td>
+            </tr>
+        </table>
+        <input type = "submit" value = "Login!">
+
     </form>
     <a href="register">Registration</a>
 </body>
