@@ -41,5 +41,16 @@
         <textarea name="content" rows="8" cols="40"></textarea><br />
         <input type="submit" value="OK" />
     </form>
+    <br>
+    <c:url value="/subject" var="urlSubject" scope="page" />
+    <form action="${urlSubject}">
+        <input type="submit" value="Subjects list" />
+    </form>
+    <br>
+    <c:url value="/logout" var="urlLogout" scope="page" />
+    <form action="${urlLogout}">
+        <input type="submit" value="Logout">
+    </form>
+
 </body>
 </html>

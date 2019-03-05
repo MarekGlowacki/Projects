@@ -17,6 +17,7 @@
     <title>Forum</title>
 </head>
 <body>
+
     <h1>Forum</h1>
     <table>
         <tr>
@@ -36,12 +37,16 @@
                 <td>${subject.user.login}</td>
             </tr>
         </c:forEach>
-    </table>
+    </table><br>
     <c:url value="/newSubject" var="urlNewSubject" scope="page" />
     <form action="${urlNewSubject}">
         <input type="submit" value="New Subject" />
     </form>
     <br />
-    <a href="logout">Log out</a>
+    <c:url value="/logout" var="urlLogout" scope="page" />
+    <form action="${urlLogout}">
+        <input type="submit" value="Logout">
+    </form>
+
 </body>
 </html>

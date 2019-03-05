@@ -11,6 +11,7 @@
 <html>
 <head>
     <title>Forum - registration</title>
+
 </head>
 <body>
     <h1>Registration</h1>
@@ -24,5 +25,8 @@
         <input type="password" name="password2" maxlength="40" /><br />
         <input type="submit" value="Register" />
     </form>
+
+
 </body>
 </html>
+
