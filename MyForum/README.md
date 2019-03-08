@@ -6,4 +6,4 @@ by Tomcat mechanism called "j_security_check", which checks the compatibility of
 MD5 algorithm. Passwords in MySQL database are also saved by encoding with MD5 algorithm during registration. 
 Information about the logged user is stored as a cookie in an active session.
 
-   When the user logs out, the session is cleared.
+Subjects and user information are stored as tables in the MySQL database. When the user logs out, the session is cleared.
